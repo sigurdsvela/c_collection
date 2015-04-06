@@ -1,7 +1,7 @@
 build:
 	mkdir bin;\
 	cd bin;\
-	gcc -c ../tests/*.c ../*.h ../*.c;\
+	gcc -I../src -c ../tests/*.c ../src/*.h ../src/*.c;\
 	gcc *.o -o build
 
 clean:

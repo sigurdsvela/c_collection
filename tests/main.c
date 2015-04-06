@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../arraylist.h"
+#include "arraylist.h"
 
 void assert(int i1, int i2, char *msg) {
   printf("assert:");
