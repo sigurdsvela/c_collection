@@ -24,9 +24,7 @@ int arraylist_push(arraylist *list, void* value) {
 	if (list->stkpnt == list->size) arraylist_resize_to_fit(list, list->size+1);
 
 	//Push value, then incriment stack pnt
-	printf("Pushing addr %.16p->%d to index %d\n", value, *(int*)value, list->stkpnt);
 	list->array[list->stkpnt++] = value;
-	printf("list->array[%.2d] = %.16p -> %d\n\n", list->stkpnt-1, list->array[list->stkpnt-1], ((int*)list->array[list->stkpnt-1])[0]);
 	return ARRAYLIST_OK;
 }
 
